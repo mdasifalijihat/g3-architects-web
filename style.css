@@ -111,8 +111,36 @@ main > section {
   margin-bottom: 24px;
 }
 
+/* some facts style */
+.card-1{
+    border: 2px solid orange;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    max-width: 240px;
+    padding: 16px;
+    margin-top: 10px;
+}
+.card-img{
+    width: 45px;
+    height: 45px;
+}
+.card-number{
+    font-size: 2.8rem;
+    margin-top: 8px;
+}
+.card-description {
+    font-size: 1rem;
+    color: gray;
+    text-align: center;
+    margin-top: 8px;
+}
 
-
+.card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 
 /* responsive media query */
@@ -121,7 +149,7 @@ main > section {
   .nav-links, .teams {
     flex-direction: column;
   }
-  .team-img-container{
+  .team-img-container, .card{
     grid-template-columns: repeat(1, 1fr);
   }
   .our-features{
